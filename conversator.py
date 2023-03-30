@@ -6,8 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 MAX_TOKENS_STORED = 3300
 
 class Conversator:
-	def __init__(self, api_key, loop):
-		openai.api_key = api_key
+	def __init__(self, loop):
 		self.messages = []
 		self.token_counts = []
 		self.tokens_total = 0
